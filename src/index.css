@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+:root {
+    --text-heading-color: #1F2261;
+    --primary-color: #26278D;
+    --secondary-color: #ECF2F9;
+    --light-text-color: #808080;
+    --dark-color: #3C3C3C;
+    --light-border-color: #E7E7EE;
+    --input-bg-color: #EFEFEF;
+    --box-color: #ffffff;
+}
+*::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
 * {
     padding: 0;
     margin: 0;
@@ -10,4 +24,31 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+}
+input {
+    font: inherit;
+}
+input:focus {
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+select {
+    height: 40px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 0.9em;
+}
+.mini-text {
+    font-size: 0.8em;
+    color: var(--light-text-color);
 }
